@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather API App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css" charset="utf-8">
+</head>
+
+<body>
+  <div class="container has-text-centered">
+    <h1>Weather forecast for the next 5 days</h1>
+    <div class="weather-description" style="white-space:pre-line">\n<img src=\"http://l.yimg.com/a/i/us/we/52/28.gif\"/><br />\n<b>Current Conditions:</b><br />\nMostly Cloudy, 32 C<BR />\n<BR /><b>Forecast:</b><BR />\nSat - Scattered Thunderstorms. High: 32 Low: 26<br />\nSun - Thunderstorms. High: 33 Low: 27<br />\nMon - Scattered Thunderstorms. High: 32 Low: 26<br />\nTue - Thunderstorms. High: 32 Low: 26<br />\nWed - Scattered Thunderstorms. High: 32 Low: 27<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n
+</div>
+    <h3>Forecast</h3>
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th><strong>Code</strong></th>
+          <th><strong>Date</strong></th>
+          <th><strong>Day</strong></th>
+          <th><strong>High</strong></th>
+          <th><strong>Low</strong></th>
+          <th><strong>Text</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active" id="row1">
+          <td class="active" id="code">
+            38
+          </td>
+          <td class="active" id="date">
+            3 May 2014
+          </td>
+          <td class="active" id="day">
+            Sat
+          </td>
+          <td class="active" id="high">
+            32
+          </td>
+          <td class="active" id="low">
+            26
+          </td>
+          <td class="active" id="text">
+            Scattered Thunderstorms
+          </td>
+        </tr>
+        <tr class="active" id="row2">
+          <td class="active" id="code">
+            38
+          </td>
+          <td class="active" id="date">
+            3 May 2014
+          </td>
+          <td class="active" id="day">
+            Sat
+          </td>
+          <td class="active" id="high">
+            32
+          </td>
+          <td class="active" id="low">
+            26
+          </td>
+          <td class="active" id="text">
+            Scattered Thunderstorms
+          </td>
+        </tr>
+        <tr class="active" id="row3">
+          <td class="active" id="code">
+            38
+          </td>
+          <td class="active" id="date">
+            3 May 2014
+          </td>
+          <td class="active" id="day">
+            Sat
+          </td>
+          <td class="active" id="high">
+            32
+          </td>
+          <td class="active" id="low">
+            26
+          </td>
+          <td class="active" id="text">
+            Scattered Thunderstorms
+          </td>
+        </tr>
+        <tr class="active" id="row4">
+          <td class="active" id="code">
+            38
+          </td>
+          <td class="active" id="date">
+            3 May 2014
+          </td>
+          <td class="active" id="day">
+            Sat
+          </td>
+          <td class="active" id="high">
+            32
+          </td>
+          <td class="active" id="low">
+            26
+          </td>
+          <td class="active" id="text">
+            Scattered Thunderstorms
+          </td>
+        </tr>
+        <tr class="active" id="row5">
+          <td class="active" id="code">
+            38
+          </td>
+          <td class="active" id="date">
+            3 May 2014
+          </td>
+          <td class="active" id="day">
+            Sat
+          </td>
+          <td class="active" id="high">
+            32
+          </td>
+          <td class="active" id="low">
+            26
+          </td>
+          <td class="active" id="text">
+            Scattered Thunderstorms
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
