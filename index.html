@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather API App</title>
+  <link rel="stylesheet" href="assets/css/bulma.css" charset="utf-8">
+  <link rel="stylesheet" href="assets/css/style.css" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/handlebars.js" charset="utf-8"></script>
+  <script src="assets/js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <section class="hero is-warning is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Weather or Not
+          </h1>
+          <h2 class="subtitle">
+            Let us enlighten you on the weather for the next 5 days.
+          </h2>
+          <a class="button is-danger" id="enlighten">Enlighten Me</a>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-success is-bold is-large" id="forecast">
+      <div class="hero-body">
+        <div class="container">
+        <h1 class="title ">Forecast</h1>
+        <div class="columns export-content">
+          <script id="forecast-template" type="text/x-handlebars-template">
+            {{#each this}}
+            <div class="card column">
+              <div class="card-content">
+                <div class="content">
+                  <div id="day">{{day}}</div>
+                  <div id="date">{{date}}</div>
+                  <div id="text">{{text}}</div>
+                  <div id="high">{{high}}</div>
+                  <div id="low">{{low}}</div>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </script>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Weather Or Not</strong> by Flapjacks.
+          </p>
+          <p>
+            <a class="icon" href="https://github.com/jgthms/bulma">
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+</body>
+
+</html>
